@@ -1,0 +1,31 @@
+Window property:
+    Icon
+    ResizeMode: CanResize(default), CanMinimize(can minimize, not to maximize it or drag it bigger or smaller), NoResize
+    ShowInTaskbar: true(default), false(your window won't be represented in the Windows taskbar)
+    SizeToContent: decide if the Window should resize itself to automatically fit its content. Width, Height and WidthndHeight
+    Topmost: false(default), true(your Window will stay on top of other windows unless minimized)
+    WindowStartupLocation: 
+    WindowState: Normal, Maximized, Minimized
+    
+App.xaml:
+    is the declarative starting point of your application.
+    StartupUri="MainWindow.xaml":
+        this is actually the part that instructs which Window or Page to start up when the application is launched.
+        In some situations, you want more control over how and when the first window is displayed. In that case, you 
+        can remove the StartupUri property and value and then do it all from Code-Behind instead. this will be demonstrated below.
+        
+StaticResource and DynamicResource:
+    a static resource is resolved only once, which is at the point where the XAML is loaded.
+    a dynamic resource is resolved once it's actually needed, and then again if the resource changes.
+    
+data-bingding:
+    {Binding Path=NameOfProperty}
+        the path notes the property that you want to bind to, however, since Path is the default property of a binding, 
+        you may leave it out if you want to, like this: {Binding NameOfProperty}
+    
+    {Binding Path=Text,}
+    
+    
+    
+    
+    
