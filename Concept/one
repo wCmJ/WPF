@@ -25,6 +25,8 @@ data-bingding:
     
     {Binding Path=Text,}
     
+GridSplitter:
+    is used in nearest <Grid></Grid>. similiar to break.
     
     
     
