@@ -1,0 +1,27 @@
+<Application x:Class="LauncherWPF.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:LauncherWPF"
+             >
+    <Application.Resources>
+        <Style x:Key="settingTextBoxStyle" TargetType="{x:Type TextBox}">
+        </Style>
+
+        <ResourceDictionary x:Key="Languages">
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Languages\StringResource.de-DE.xaml"/>
+                <ResourceDictionary Source="Languages\StringResource.en-US.xaml"/>
+                <ResourceDictionary Source="Languages\StringResource.zh-CN.xaml"/>
+                <ResourceDictionary Source="Languages\StringResource.de-DE.xaml"/>
+                <ResourceDictionary Source="Languages\StringResource.es-ES.xaml"/>
+                <ResourceDictionary Source="Languages\StringResource.fr-FR.xaml"/>
+                <ResourceDictionary Source="Languages\StringResource.ja-JP.xaml"/>
+                <ResourceDictionary Source="Languages\StringResource.ko-KR.xaml"/>
+                <ResourceDictionary Source="Languages\StringResource.pt-BR.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>
+
+if no <style>, the resource can't be found.
+
